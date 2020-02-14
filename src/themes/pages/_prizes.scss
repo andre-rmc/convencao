@@ -1,0 +1,39 @@
+#prizes {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  & img {
+    width: 81%;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 40px;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover {
+      -webkit-box-shadow: 0 0.5em 0.5em -0.4em rgba($main-color, 0.4);
+      -moz-box-shadow: 0 0.5em 0.5em -0.4em rgba($main-color, 0.4);
+      box-shadow: 0 0.5em 0.5em -0.4em rgba($main-color, 0.4);
+      transform: translateY(-0.35em);
+    }
+  }
+
+  & h3 {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
+  @media (min-width: 992px) {
+    padding-bottom: 110px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 130px;
+  }
+}

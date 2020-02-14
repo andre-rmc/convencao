@@ -1,0 +1,53 @@
+#subheader {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #ebebeb;
+
+  & h2 {
+    font: 800 32px/1.2em 'Sansita', sans-serif;
+    margin-bottom: 25px;
+
+    & span {
+      color: $main-color;
+    }
+
+    @media (min-width: 992px) {
+      font: 800 48px/1em 'Sansita', sans-serif;
+    }
+    @media (min-width: 768px) {
+      font: 800 44px/1em 'Sansita', sans-serif;
+      margin-bottom: 30px;
+    }
+  }
+  & p {
+    font: 300 18px/1.5em 'Source Sans Pro', sans-serif;
+
+    @media (min-width: 1200px) {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    @media (min-width: 992px) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  & .svg-subheader-bottom {
+    z-index: 2;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    fill: #fff;
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+    padding-bottom: 140px;
+  }
+}

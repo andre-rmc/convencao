@@ -1,0 +1,188 @@
+#agenda {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  & h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & .event-time {
+    margin-top: 30px;
+    margin-bottom: 17px;
+    text-align: center;
+
+    &.first {
+      margin-top: 25px;
+    }
+
+    & h3 {
+      display: block;
+      margin-top: 35px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      background-color: $main-color;
+      color: #fff;
+
+      @media (min-width: 992px) {
+        display: inline-block;
+        margin: 0px;
+        height: 57px;
+        padding-top: 19px;
+        font: 800 20px/0.9em 'Sansita', sans-serif;
+        width: 100%;
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+
+    @media (min-width: 992px) {
+      &,
+      &.first {
+        margin-top: 30px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  & .card {
+    border: 0px none;
+    border-radius: 0px;
+    box-shadow: none;
+
+    & > .card-header {
+      padding: 0;
+      border-radius: 0px;
+
+      & > a {
+        display: block;
+        position: relative;
+        padding: 14px 50px 14px 15px;
+        font: 600 18px/1.5em 'Source Sans Pro', sans-serif;
+        border: 1px solid $main-color;
+        background: #fff;
+        color: #4b4b4b;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:after,
+        &.collapsed:after {
+          color: $main-color;
+        }
+
+        &:after {
+          content: 'remove_circle';
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          font-feature-settings: 'liga';
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+
+          color: $main-color;
+          position: absolute;
+          right: 8px;
+          top: 12px;
+          border-radius: 25px;
+          font-size: 35px;
+          line-height: 1;
+          -o-transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          -moz-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+        }
+
+        &.collapsed:after {
+          content: 'add_circle_outline';
+          background: #fff;
+        }
+
+        &:hover {
+          text-decoration: none;
+          outline: none;
+          background: #fff;
+          color: #4b4b4b;
+
+          &.collapsed:after {
+            content: 'add_circle';
+            color: $main-color;
+          }
+        }
+
+        &.no-details {
+          display: block;
+          position: relative;
+          padding: 14px 15px 14px 15px;
+          -o-transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          -moz-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+          cursor: default;
+
+          &:after {
+            content: ' ';
+            display: none;
+          }
+        }
+      }
+
+      & + .collapse > .card-body {
+        border-top: none;
+      }
+    }
+  }
+
+  & .card-body {
+    color: #3e3e3e;
+    background: #fff;
+    border: 1px solid $main-color;
+    line-height: 24px;
+
+    & p {
+      text-align: justify;
+    }
+
+    &:before,
+    &:after {
+      display: table;
+      content: ' ';
+    }
+    &:after {
+      clear: both;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    & .col-md-9 {
+      padding-left: 0px;
+    }
+
+    & .event-time,
+    & .card-header {
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 35px;
+  }
+}

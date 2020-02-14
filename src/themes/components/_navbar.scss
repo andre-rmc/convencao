@@ -1,0 +1,57 @@
+.navbar {
+  & .navbar-nav {
+    & .nav-item {
+      & .nav-link {
+        color: $sec-color;
+        font: 600 14px/1em 'Source Sans Pro', sans-serif;
+
+        &:hover {
+          background-color: $sec-color;
+          color: #fff;
+
+          @media (min-width: 768px) {
+            border: 1px solid $sec-color;
+          }
+        }
+
+        @media screen and (min-width: 768px) {
+          margin: 13px 4px 12px 4px;
+          padding: 8px 12px 9px 12px;
+          background-color: none;
+          border: 1px solid $sec-color;
+          border-radius: 2px;
+          -o-transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
+            border 0.2s ease-in-out;
+          -webkit-transition: background 0.2s ease-in-out,
+            color 0.2s ease-in-out, border 0.2s ease-in-out;
+          -moz-transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
+            border 0.2s ease-in-out;
+          transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
+            border 0.2s ease-in-out;
+        }
+      }
+      &.active {
+        a {
+          background-color: $sec-color;
+          color: #fff;
+
+          @media (min-width: 768px) {
+            border: 1px solid $sec-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.top-nav-collapse {
+    @media (min-width: 768px) {
+      padding: 0;
+      border-bottom: 1px solid #f4f4f4;
+      background-color: #fff;
+      -webkit-box-shadow: 0px -4px 8px #000000;
+      -moz-box-shadow: 0px -4px 8px #000000;
+      box-shadow: 0px -4px 8px #000000;
+      -webkit-backface-visibility: hidden;
+    }
+  }
+}

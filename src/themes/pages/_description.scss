@@ -1,0 +1,32 @@
+#description {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  & h2 {
+    margin-bottom: 25px;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      margin-top: 70px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 35px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & p {
+    text-align: justify;
+
+    @media (min-width: 992px) {
+      margin-right: 25px;
+    }
+  }
+  @media (min-width: 992px) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}

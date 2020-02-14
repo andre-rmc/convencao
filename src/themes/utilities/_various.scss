@@ -1,0 +1,67 @@
+html,
+body {
+  scroll-behavior: smooth;
+  font: 300 16px/1.6em 'Source Sans Pro', sans-serif;
+  color: #4b4b4b;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font: 800 32px/1.2em 'Sansita', sans-serif;
+
+  & span {
+    color: $main-color;
+  }
+
+  @media (min-width: 992px) {
+    font: 800 48px/1em 'Sansita', sans-serif;
+  }
+  @media (min-width: 768px) {
+    font: 800 44px/1em 'Sansita', sans-serif;
+  }
+}
+
+h3 {
+  font: 800 22px/1.3em 'Sansita', sans-serif;
+
+  @media (min-width: 768px) {
+    font: 800 26px/1.3em 'Sansita', sans-serif;
+  }
+}
+
+h4 {
+  font: 800 20px/1.3em 'Sansita', sans-serif;
+}
+
+p {
+  font: 300 16px/1.5em 'Source Sans Pro', sans-serif;
+}
+
+a {
+  font: 600 16px/1.5em 'Source Sans Pro', sans-serif;
+  color: #4b4b4b;
+
+  &:hover {
+    text-decoration: underline;
+    color: #4b4b4b;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.timer-block {
+  text-align: center;
+  margin-top: 30px;
+
+  & .timer-spot {
+    border: 10px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 115px;
+    width: 115px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 20px;
+    font-weight: 300;
+
+    & .number {
+      display: block;
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 18px;
+      line-height: 40px;
+    }
+  }
+}

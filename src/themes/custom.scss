@@ -1,0 +1,28 @@
+$main-color: #1a3227;
+$sec-color: #90e890;
+
+$primary: $main-color;
+$secondary: $sec-color;
+
+/* External Imports */
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+/* Components Import */
+@import './components/navbar';
+@import './components/footer';
+@import './components/timer';
+@import './components/subheader';
+
+/* Pages Import */
+@import './pages/header';
+@import './pages/description';
+@import './pages/agenda';
+@import './pages/prizes';
+@import './pages/location';
+
+/* Utilities Import */
+@import './utilities/various';
+
+/* Skin Import */
+@import './skins/rmc_skin';
